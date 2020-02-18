@@ -7,9 +7,9 @@ enum AppTheme {
   BlueDark,
 }
 
-final Map<AppTheme, ThemeData> appThemeData = {
-  AppTheme.GreenLight: ThemeData(brightness: Brightness.light, primarySwatch: Colors.green),
-  AppTheme.GreenDark: ThemeData(brightness: Brightness.dark, primarySwatch: Colors.green),
-  AppTheme.BlueLight: ThemeData(brightness: Brightness.light, primarySwatch: Colors.blue),
-  AppTheme.BlueDark: ThemeData(brightness: Brightness.dark, primarySwatch: Colors.blue),
+final Map<AppTheme, ThemeData> appThemeData = <AppTheme, ThemeData>{
+  AppTheme.GreenLight: ThemeData(brightness: Brightness.light, primaryColor: Colors.green),
+  AppTheme.GreenDark: ThemeData(brightness: Brightness.dark, primaryColor: Colors.green[700]),
+  // AppTheme.BlueLight: ThemeData(brightness: Brightness.light, primaryColor: Colors.blue),
+  // AppTheme.BlueDark: ThemeData(brightness: Brightness.dark, primaryColor: Colors.blue[700]),
 };
