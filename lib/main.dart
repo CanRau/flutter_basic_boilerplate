@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_boilerplate/bloc/bloc_from_scratch.dart';
-import 'package:flutter_basic_boilerplate/ui/global/theme/app_themes.dart';
-import 'package:flutter_basic_boilerplate/ui/global/theme/bloc/theme_bloc.dart';
+import 'package:boilerplate/bloc/bloc_from_scratch.dart';
+import 'package:boilerplate/ui/global/theme/app_themes.dart';
+import 'package:boilerplate/ui/global/theme/bloc/theme_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() => runApp(MyApp());
@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
 
   Widget _buildWithTheme(BuildContext context, ThemeState state) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Boilerplate',
       theme: state.themeData,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Home Page'),
     );
   }
 }

@@ -1,4 +1,4 @@
-package com.example.flutter_basic_boilerplate
+package com.example.boilerplate
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

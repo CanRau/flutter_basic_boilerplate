@@ -1,4 +1,4 @@
-# flutter_basic_boilerplate
+# boilerplate
 
 A new Flutter project.
 
