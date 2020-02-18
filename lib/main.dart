@@ -52,40 +52,41 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: AppTheme.values.map((AppTheme itemAppTheme) {
-              final ThemeData theme = appThemeData[itemAppTheme];
-              // return RawMaterialButton(
-              //   onPressed: () {
-              //     BlocProvider.of<ThemeBloc>(context).add(
-              //       ThemeChanged(theme: itemAppTheme),
-              //     );
-              //     // Navigator.of(context).pop();
-              //   },
-              //   // child: CircleAvatar(
-              //   //   backgroundColor: theme.primaryColor,
-              //   // ),
-              //   shape: const CircleBorder(),
-              //   elevation: 2.0,
-              //   fillColor: theme.primaryColor,
-              // );
-              return Container(
-                margin: const EdgeInsets.all(10.0),
-                child: ClipOval(
-                  child: Material(
-                    color: theme.primaryColor,
-                    child: InkWell(
-                      splashColor: theme.backgroundColor,
-                      onTap: () {
-                        BlocProvider.of<ThemeBloc>(context).add(
-                          ThemeChanged(theme: itemAppTheme),
-                        );
-                        Navigator.of(context).pop();
-                      }, // inkwell color
-                      child: const SizedBox(width: 56, height: 56),
+                final ThemeData theme = appThemeData[itemAppTheme];
+                // return RawMaterialButton(
+                //   onPressed: () {
+                //     BlocProvider.of<ThemeBloc>(context).add(
+                //       ThemeChanged(theme: itemAppTheme),
+                //     );
+                //     // Navigator.of(context).pop();
+                //   },
+                //   // child: CircleAvatar(
+                //   //   backgroundColor: theme.primaryColor,
+                //   // ),
+                //   shape: const CircleBorder(),
+                //   elevation: 2.0,
+                //   fillColor: theme.primaryColor,
+                // );
+                return Container(
+                  margin: const EdgeInsets.all(10.0),
+                  child: ClipOval(
+                    child: Material(
+                      color: theme.primaryColor,
+                      child: InkWell(
+                        splashColor: theme.backgroundColor,
+                        onTap: () {
+                          BlocProvider.of<ThemeBloc>(context).add(
+                            ThemeChanged(theme: itemAppTheme),
+                          );
+                          Navigator.of(context).pop();
+                        }, // inkwell color
+                        child: const SizedBox(width: 56, height: 56),
+                      ),
                     ),
                   ),
-                ),
-              );
-            }).toList(),),
+                );
+              }).toList(),
+            ),
           ],
         ),
 
@@ -109,7 +110,6 @@ class _MyHomePageState extends State<MyHomePage> {
         //     ),
         //   ),
         // ]),
-
       ),
       body: StreamBuilder<int>(
         stream: _bloc.counter,
