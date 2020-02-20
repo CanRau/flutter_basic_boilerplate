@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+      "name": "[DEV] Boilerplate",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "dev"
+      ]
+    },
+    {
+      "name": "Boilerplate",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "prod"
+      ]
+    }
+  ]
+}
